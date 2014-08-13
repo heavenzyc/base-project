@@ -117,7 +117,7 @@
       <file leaf-file-name="jdbc.properties" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/conf/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="501" selection-end="501" vertical-scroll-proportion="0.7002457" vertical-offset="0" max-vertical-offset="912">
+            <state line="13" column="45" selection-start="451" selection-end="451" vertical-scroll-proportion="0.6068796" vertical-offset="0" max-vertical-offset="912">
               <folding />
             </state>
           </provider>
@@ -832,7 +832,7 @@
       <created>1407829883862</created>
       <updated>1407829883862</updated>
       <workItem from="1407829886393" duration="4225000" />
-      <workItem from="1407899098708" duration="18115000" />
+      <workItem from="1407899098708" duration="18723000" />
     </task>
     <task id="LOCAL-00001" summary="new create&#10;">
       <created>1407919303043</created>
@@ -842,11 +842,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22340000" />
+    <option name="totallyTimeSpent" value="22948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -871,7 +871,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23071104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24836601" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1061,7 +1061,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/conf/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="501" selection-end="501" vertical-scroll-proportion="0.7002457" vertical-offset="0" max-vertical-offset="912">
+        <state line="13" column="45" selection-start="451" selection-end="451" vertical-scroll-proportion="0.6068796" vertical-offset="0" max-vertical-offset="912">
           <folding />
         </state>
       </provider>
