@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <properties>
   	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  	    <base.version>1.0-SNAPSHOT</base.version>
+  	    <base.version>1.0.0-SNAPSHOT</base.version>
     </properties>
     <modules>
         <module>base-parent</module>
