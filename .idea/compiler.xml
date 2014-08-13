@@ -23,7 +23,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="base-core" />
-        <module name="base-parent" />
         <module name="base-utils" />
         <module name="base-web" />
       </profile>
