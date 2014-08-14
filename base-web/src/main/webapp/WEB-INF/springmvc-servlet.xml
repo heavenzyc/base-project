@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd"
         default-autowire="byName" default-lazy-init="false">
     <import resource="classpath*:/spring/spring-*.xml"/>
-    <context:component-scan base-package="com.base*"/>
+    <context:component-scan base-package="com.base.controller*"/>
 
     <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
