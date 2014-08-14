@@ -12,10 +12,29 @@
     <import resource="classpath*:/spring/spring-*.xml"/>
     <context:component-scan base-package="com.base.controller*"/>
 
-    <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-        <property name="prefix" value="/WEB-INF/jsp"/>
-        <property name="suffix" value=".jsp"/>
+    <!-- freemarker的配置 -->
+    <bean id="freemarkerConfig"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/view/" />
+        <property name="defaultEncoding" value="utf-8" />
+       <!-- <property name="freemarkerSettings">
+            <props>
+                <prop key="template_update_delay">10</prop>
+                <prop key="locale">zh_CN</prop>
+                <prop key="datetime_format">yyyy-MM-dd</prop>
+                <prop key="date_format">yyyy-MM-dd</prop>
+                <prop key="number_format">#.##</prop>
+            </props>
+        </property>-->
+    </bean>
+    <!-- FreeMarker视图解析-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"></property>
+        <property name="suffix" value=".ftl" />
+        <property name="contentType" value="text/html;charset=utf-8" />
+        <property name="exposeRequestAttributes" value="true" />
+        <property name="exposeSessionAttributes" value="true" />
+        <property name="exposeSpringMacroHelpers" value="true" />
     </bean>
 
 </beans>

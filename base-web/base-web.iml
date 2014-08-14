@@ -62,6 +62,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.20" level="project" />
   </component>
 </module>
 
