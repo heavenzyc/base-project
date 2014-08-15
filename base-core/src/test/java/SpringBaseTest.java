@@ -12,6 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 @TransactionConfiguration(defaultRollback=false)
 @RunWith(SpringJUnit4ClassRunner.class)
 @Transactional
-public class SpringBaseTest extends
+public abstract class SpringBaseTest extends
         AbstractTransactionalJUnit4SpringContextTests {
 }
