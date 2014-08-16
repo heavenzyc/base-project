@@ -24,4 +24,5 @@ public interface BaseDao<T,PK extends Serializable> {
 //    String hql = " from BuildingNews b where b.enable=1 and b.merchant.id=:merchantid and b.shareEnvelope != null ORDER BY id desc ";
 //    Finder finder = new SimpleParametersFinder(hql, "merchantid", merchantid);
 //    return find(finder, pagination);
+
 }
