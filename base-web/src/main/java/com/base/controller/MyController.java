@@ -21,6 +21,7 @@ public class MyController {
     public String index(Model model){
         User user = userService.get(1);
         model.addAttribute("user",user);
+		
         return "/index";
     }
 }
