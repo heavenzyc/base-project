@@ -1,5 +1,6 @@
 package com.base.controller;
 
+import com.base.PrintUtils;
 import com.base.user.domain.User;
 import com.base.user.service.UserService;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,7 @@ public class MyController {
     public String index(Model model){
         User user = userService.get(1);
         model.addAttribute("user",user);
+        PrintUtils.print(user.getRole().getName());
         return "/index";
     }
 }
