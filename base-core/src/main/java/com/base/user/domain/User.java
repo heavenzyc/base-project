@@ -1,10 +1,9 @@
 package com.base.user.domain;
 
 import com.base.common.BaseEntity;
-import com.base.role.Role;
+import com.base.role.domain.Role;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 /**
  * Created by heaven.zyc on 14-8-14.
