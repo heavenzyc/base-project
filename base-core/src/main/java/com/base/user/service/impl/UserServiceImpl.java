@@ -4,6 +4,7 @@ import com.base.user.dao.UserDao;
 import com.base.user.domain.User;
 import com.base.user.service.UserService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
@@ -18,6 +19,7 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
+    @Transactional(readOnly = true, rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
     public User get(Integer id) {
         return userDao.get(id);
     }
