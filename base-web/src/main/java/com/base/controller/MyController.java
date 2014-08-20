@@ -18,11 +18,11 @@ public class MyController {
 
     @Resource
     private UserService userService;
+
     @RequestMapping(value = "/index")
     public String index(Model model){
         User user = userService.get(1);
         model.addAttribute("user",user);
-        PrintUtils.print(user.getRole().getName());
         return "/index";
     }
 }
