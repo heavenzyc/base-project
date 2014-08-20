@@ -1,4 +1,4 @@
-package com.base.role;
+package com.base.role.domain;
 
 import com.base.common.BaseEntity;
 
