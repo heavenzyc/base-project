@@ -19,7 +19,6 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    @Transactional(readOnly = true, rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
     public User get(Integer id) {
         return userDao.get(id);
     }
