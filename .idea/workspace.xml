@@ -2,53 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aaedfab-6172-4a29-95dc-cb1ac1e5e697" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/base_web_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/base_web_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_annotations_3_5_6_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_3_5_6_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_asm_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\myWorkspace\base-project\.idea\libraries\Maven__com_base_base_core_1_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\myWorkspace\base-project\.idea\libraries\Maven__com_base_base_utils_1_0_SNAPSHOT.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-parent/base-parent.iml" afterPath="$PROJECT_DIR$/base-parent/base-parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-project.iml" afterPath="$PROJECT_DIR$/base-project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-utils/base-utils.iml" afterPath="$PROJECT_DIR$/base-utils/base-utils.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-web/base-web.iml" afterPath="$PROJECT_DIR$/base-web/base-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/spy.log" afterPath="$PROJECT_DIR$/base-core/spy.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java" afterPath="$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/base-core.iml" afterPath="$PROJECT_DIR$/base-core/base-core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="base-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,15 +91,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="21" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="1368">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="springmvc-servlet.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-web/src/main/webapp/WEB-INF/springmvc-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -157,7 +104,14 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.2.RELEASE/spring-orm-3.1.2.RELEASE-sources.jar!/org/springframework/orm/hibernate3/support/OpenSessionInViewInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="91" column="13" selection-start="4787" selection-end="4787" vertical-scroll-proportion="0.0" vertical-offset="1962" max-vertical-offset="3990">
-              <folding />
+              <folding>
+                <element signature="e#0#10217#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#5935#5936#0" expanded="false" />
+                <element signature="e#5976#5977#0" expanded="false" />
+                <element signature="e#6087#6088#0" expanded="false" />
+                <element signature="e#6114#6115#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,16 +137,25 @@
       <file leaf-file-name="base-core.iml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-core/base-core.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1045">
+            <state line="5" column="39" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base-parent.iml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserDaoTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="28" selection-start="398" selection-end="398" vertical-scroll-proportion="0.5846154" vertical-offset="0" max-vertical-offset="551">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base-parent.iml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-parent/base-parent.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.79831934" vertical-offset="0" max-vertical-offset="399">
+            <state line="14" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
               <folding />
             </state>
           </provider>
@@ -254,7 +217,6 @@
         <option value="$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseEntity.java" />
         <option value="$PROJECT_DIR$/base-core/src/main/java/com/base/role/Role.java" />
         <option value="$PROJECT_DIR$/base-web/src/main/webapp/WEB-INF/view/index.ftl" />
-        <option value="$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/base-core/src/main/resources/spring/spring-hibernate.xml" />
         <option value="$PROJECT_DIR$/base-core/src/main/java/com/base/user/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/base-web/src/main/webapp/WEB-INF/web.xml" />
@@ -264,6 +226,7 @@
         <option value="$PROJECT_DIR$/base-web/pom.xml" />
         <option value="$PROJECT_DIR$/base-web/src/main/java/com/base/controller/MyController.java" />
         <option value="$PROJECT_DIR$/base-core/base-core.iml" />
+        <option value="$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java" />
       </list>
     </option>
   </component>
@@ -298,12 +261,12 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="base-core" />
+          <option name="myItemId" value="base-project" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -388,53 +351,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="base-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base-parent" />
+              <option name="myItemId" value="base-core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,6 +366,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="base-core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -981,7 +910,7 @@
       <workItem from="1408496550826" duration="8161000" />
       <workItem from="1408581493998" duration="23000" />
       <workItem from="1408581545950" duration="1695000" />
-      <workItem from="1408601205639" duration="673000" />
+      <workItem from="1408601205639" duration="1866000" />
     </task>
     <task id="LOCAL-00001" summary="new create&#10;">
       <created>1407919303043</created>
@@ -1019,7 +948,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94082000" />
+    <option name="totallyTimeSpent" value="95275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1034,7 +963,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32189542" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23827533" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29575163" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -1045,10 +974,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21633889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.17776097" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22844176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22844176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42810458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42810458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1113,11 +1042,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="73" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base-web/src/main/java/com/base/controller/MyBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247" />
@@ -1247,10 +1171,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="11" selection-start="565" selection-end="565" vertical-scroll-proportion="-3.96" vertical-offset="72" max-vertical-offset="551">
           <folding>
-            <element signature="e#742#767#0" expanded="true" />
-            <element signature="e#805#818#0" expanded="true" />
-            <element signature="e#861#879#0" expanded="true" />
-            <element signature="e#922#940#0" expanded="true" />
+            <element signature="e#742#767#0" expanded="false" />
+            <element signature="e#805#818#0" expanded="false" />
+            <element signature="e#861#879#0" expanded="false" />
+            <element signature="e#922#940#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1309,7 +1233,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/java/com/base/user/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1026" />
+        <state line="34" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1026">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/spring/spring-hibernate.xml">
@@ -1351,7 +1277,14 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.2.RELEASE/spring-orm-3.1.2.RELEASE-sources.jar!/org/springframework/orm/hibernate3/support/OpenSessionInViewInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="13" selection-start="4787" selection-end="4787" vertical-scroll-proportion="0.0" vertical-offset="1962" max-vertical-offset="3990">
-          <folding />
+          <folding>
+            <element signature="e#0#10217#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5935#5936#0" expanded="false" />
+            <element signature="e#5976#5977#0" expanded="false" />
+            <element signature="e#6087#6088#0" expanded="false" />
+            <element signature="e#6114#6115#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1390,16 +1323,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-core/base-core.iml">
+    <entry file="file://$PROJECT_DIR$/base-parent/base-parent.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+        <state line="14" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base-parent/base-parent.iml">
+    <entry file="file://$PROJECT_DIR$/base-core/base-core.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.79831934" vertical-offset="0" max-vertical-offset="399">
+        <state line="5" column="39" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="398" selection-end="398" vertical-scroll-proportion="0.5846154" vertical-offset="0" max-vertical-offset="551">
           <folding />
         </state>
       </provider>

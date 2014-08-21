@@ -27,11 +27,6 @@ public class UserDaoTest extends SpringBaseTest {
     public void findTest(){
         Map<String,Object> params = new HashMap<String, Object>();
         params.put("name","xxx");
-    //    params.put("age",28);
-        List<User> users = userDao.find("",params);
-        for(User user : users){
-            PrintUtils.print(user.getNickname());
-        }
     }
 
 }
