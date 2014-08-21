@@ -1,1 +1,17 @@
 /.idea
+
+/base-core/target
+
+/base-utils/target
+/base-web/target
+/base-core/base-core.iml
+/base-parent/base-parent.iml
+/base-utils/base-utils.iml
+
+/base-web/base-web.iml
+
+/.gitignore
+/base-project.iml
+
+/.gitattributes
+.idea

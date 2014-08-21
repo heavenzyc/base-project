@@ -1,9 +1,15 @@
 package com.base.common;
 
+import com.base.pagination.Pagination;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
+import java.sql.SQLException;
 import java.util.*;
 
 /**
@@ -79,6 +85,20 @@ public class BaseDaoImpl<T,PK extends Serializable> extends HibernateDaoSupport 
     @Override
     public List<T> find(String queryString) {
         return this.getHibernateTemplate().find(queryString);
+    }
+
+    @Override
+    public List<T> find(String queryString, Pagination pagination) {
+        final String qs = queryString;
+        Query query = getHibernateTemplate().execute(new HibernateCallback<Query>() {
+            @Override
+            public Query doInHibernate(Session session) throws HibernateException, SQLException {
+                return session.createQuery(qs);
+            }
+        });
+        query.setFirstResult((pagination.getCurrentPage()-1) * pagination.getPageSize());
+        query.setMaxResults(pagination.getPageSize());
+        return query.list();
     }
 
     @Override

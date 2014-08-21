@@ -1,5 +1,7 @@
 package com.base.common;
 
+import com.base.pagination.Pagination;
+
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
@@ -41,6 +43,7 @@ public interface BaseDao<T,PK extends Serializable> {
 
     public List<T> find(String queryString);
 
+    public List<T> find(String queryString, Pagination pagination);
     /**
      * s根据hql语句和值查询
      * @param queryString 查询语句（from User where age=? and name=?）
