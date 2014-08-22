@@ -10,7 +10,10 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by heaven.zyc on 14-8-14.
@@ -88,20 +91,6 @@ public class BaseDaoImpl<T,PK extends Serializable> extends HibernateDaoSupport 
     }
 
     @Override
-    public List<T> find(String queryString, Pagination pagination) {
-        final String qs = queryString;
-        Query query = getHibernateTemplate().execute(new HibernateCallback<Query>() {
-            @Override
-            public Query doInHibernate(Session session) throws HibernateException, SQLException {
-                return session.createQuery(qs);
-            }
-        });
-        query.setFirstResult((pagination.getCurrentPage()-1) * pagination.getPageSize());
-        query.setMaxResults(pagination.getPageSize());
-        return query.list();
-    }
-
-    @Override
     public List<T> find(String queryString, Object... values) {
         return this.getHibernateTemplate().find(queryString,values);
     }
@@ -119,7 +108,7 @@ public class BaseDaoImpl<T,PK extends Serializable> extends HibernateDaoSupport 
             paramNames.add(entry.getKey());
             values.add(entry.getValue());
         }
-        return getHibernateTemplate().findByNamedParam(queryString, (String[]) paramNames.toArray(new String[paramNames.size()]),values.toArray());
+        return getHibernateTemplate().findByNamedParam(queryString,paramNames.toArray(new String[paramNames.size()]),values.toArray());
     }
 
     @Override
@@ -128,5 +117,88 @@ public class BaseDaoImpl<T,PK extends Serializable> extends HibernateDaoSupport 
         List<T> list = find(hql,propertyValue);
         if (list.size() == 0) return null;
         return list.get(0);
+    }
+
+    @Override
+    public Pagination<T> getPage(String queryString, Map<String, Object> params, Pagination pagination) {
+        final String queryStr = queryString;
+        final Map<String,Object> pa = params;
+        final Pagination<T> pag = pagination;
+        return (Pagination<T>) getHibernateTemplate().execute(new HibernateCallback<Object>() {
+            @Override
+            public Object doInHibernate(Session session) throws HibernateException, SQLException {
+                long totalCount = 0;
+                int fromIndex = queryStr.toLowerCase().indexOf("from");
+                int orderIndex = queryStr.toLowerCase().indexOf("order");
+                String countQueryStr = "";
+                if(orderIndex!=-1){
+                    countQueryStr = "select count(*) " + queryStr.substring(fromIndex,orderIndex);
+                }else{
+                    countQueryStr = "select count(*) " + queryStr.substring(fromIndex);
+                }
+                Query countQuery = session.createQuery(countQueryStr);
+                for (Map.Entry<String,Object> entry : pa.entrySet()){
+                    countQuery.setParameter(entry.getKey(),entry.getValue());
+                }
+                totalCount = (Long)countQuery.uniqueResult();
+                Query query = session.createQuery(queryStr);
+                for (Map.Entry<String,Object> entry : pa.entrySet()){
+                    query.setParameter(entry.getKey(),entry.getValue());
+                }
+                List result = query.setFirstResult((pag.getCurrentPage()-1) * pag.getPageSize()).setMaxResults(pag.getPageSize()).list();
+                pag.setCount((int) totalCount);
+                pag.setRecord(result);
+                return pag;
+            }
+        });
+    }
+
+    @Override
+    public long count(String queryString, Map<String, Object> params) {
+        final String queryStr = queryString;
+        final Map<String,Object> map = params;
+        return (Long)getHibernateTemplate().execute(new HibernateCallback<Object>() {
+            @Override
+            public Object doInHibernate(Session session) throws HibernateException, SQLException {
+                int fromIndex = queryStr.toLowerCase().indexOf("from");
+                int orderIndex = queryStr.toLowerCase().indexOf("order");
+                String countQueryStr = "";
+                if(orderIndex!=-1){
+                    countQueryStr = "select count(*) " + queryStr.substring(fromIndex,orderIndex);
+                }else{
+                    countQueryStr = "select count(*) " + queryStr.substring(fromIndex);
+                }
+                Query countQuery = session.createQuery(countQueryStr);
+                for (Map.Entry<String,Object> entry : map.entrySet()){
+                    countQuery.setParameter(entry.getKey(),entry.getValue());
+                }
+                return countQuery.uniqueResult();
+            }
+        });
+    }
+
+    @Override
+    public long sum(String queryString,String propertyName, Map<String, Object> params) {
+        final String queryStr = queryString;
+        final Map<String,Object> map = params;
+        final String proName = propertyName;
+        return (Long)getHibernateTemplate().execute(new HibernateCallback<Object>() {
+            @Override
+            public Object doInHibernate(Session session) throws HibernateException, SQLException {
+                int fromIndex = queryStr.toLowerCase().indexOf("from");
+                int orderIndex = queryStr.toLowerCase().indexOf("order");
+                String countQueryStr = "";
+                if(orderIndex!=-1){
+                    countQueryStr = "select sum("+proName+") " + queryStr.substring(fromIndex,orderIndex);
+                }else{
+                    countQueryStr = "select sum("+proName+") " + queryStr.substring(fromIndex);
+                }
+                Query countQuery = session.createQuery(countQueryStr);
+                for (Map.Entry<String,Object> entry : map.entrySet()){
+                    countQuery.setParameter(entry.getKey(),entry.getValue());
+                }
+                return countQuery.uniqueResult();
+            }
+        });
     }
 }

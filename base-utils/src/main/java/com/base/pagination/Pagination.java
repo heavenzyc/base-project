@@ -7,13 +7,15 @@
 package com.base.pagination;
 
 
+import java.io.Serializable;
+import java.util.List;
 
 /**
- * description
- * @author  jianguo.xu
- * @version 1.0,2010-3-15
+ *
+ * 分页组件
+ * @author heaven.zyc
  */
-public class Pagination {
+public class Pagination<T> implements Serializable {
 	
 	public static final int DEFAULT_PAGE_SIZE=15;
 	public static final int DEFAULT_CURRENT_PAGE=1;
@@ -21,31 +23,8 @@ public class Pagination {
 	public static final int DEFAULT_CURRENT_SKIP=1;
 	
 	public static final int MAX_PAGE_SIZE=200;
-	
-	/**
-	 * url
-	 */
-	private String url;
-	
-	/**
-	 * 查询字符串
-	 */
-	private String queryString;
-	
-	/**
-	 * 每页对象数的参数名
-	 */
-	private String pageSizeTarget;
-	
-	/**
-	 * 快进数量的参数名
-	 */
-	private String skipSizeTarget;
 
-	/**
-	 * 当前页的参数名
-	 */
-	private String currentPageTarget;
+    private List<T> record;
 
 	/**
 	 * 每页对象数
@@ -88,9 +67,16 @@ public class Pagination {
 	 * 当前快近所在页面
 	 */
 	private int currentSkip = DEFAULT_CURRENT_SKIP;
-	
-	
-	public Pagination(){
+
+    public List<T> getRecord() {
+        return record;
+    }
+
+    public void setRecord(List<T> record) {
+        this.record = record;
+    }
+
+    public Pagination(){
 		this(DEFAULT_PAGE_SIZE,DEFAULT_CURRENT_PAGE,DEFAULT_SKIP_SIZE);
 	}
 
@@ -109,30 +95,6 @@ public class Pagination {
 		this.pageSize=pageSize;
 		this.currentPage=currentPage;
 		this.skipSize=skipSize;
-	}
-
-	public String getCurrentPageTarget() {
-		return currentPageTarget;
-	}
-
-	public void setCurrentPageTarget(String currentPageTarget) {
-		this.currentPageTarget = currentPageTarget;
-	}
-
-	public String getSkipSizeTarget() {
-		return skipSizeTarget;
-	}
-
-	public void setSkipSizeTarget(String skipSizeTarget) {
-		this.skipSizeTarget = skipSizeTarget;
-	}
-
-	public String getPageSizeTarget() {
-		return pageSizeTarget;
-	}
-
-	public void setPageSizeTarget(String pageSizeTarget) {
-		this.pageSizeTarget = pageSizeTarget;
 	}
 
 	public int getCurrentSkip() {
@@ -223,14 +185,6 @@ public class Pagination {
 		return end;
 	}
 
-	public String getQueryString() {
-		return queryString;
-	}
-
-	public void setQueryString(String queryString) {
-		this.queryString = queryString;
-	}
-
 	/**
 	 * 得到快近页数
 	 * 
@@ -270,16 +224,7 @@ public class Pagination {
 	 * 
 	 * @return
 	 */
-	public boolean canGoFirst() {
-		return (this.currentPage > 1);
-	}
-
-	/**
-	 * 是否可以到前一页
-	 * 
-	 * @return
-	 */
-	public boolean isCanGoPrevious() {
+	public boolean hasPreviousPage() {
 		return (this.currentPage > 1);
 	}
 
@@ -288,17 +233,7 @@ public class Pagination {
 	 * 
 	 * @return
 	 */
-	public boolean isCanGoNext() {
-		return (this.currentPage < this.pageCount);
-	}
-
-	/**
-	 * 是否可以到最后一页
-	 * 
-	 * @return
-	 */
-	public boolean isCanGoLast() {
-		//return currentPage!=pageCount&&pageCount!=0;
+	public boolean hasNextPage() {
 		return (this.currentPage < this.pageCount);
 	}
 	
@@ -366,7 +301,7 @@ public class Pagination {
 
 	/**
 	 * 是否可以向后快进
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean isCanSkipBackward() {
@@ -396,20 +331,6 @@ public class Pagination {
 			Result[i] = currentSkip + i;
 		}
 		return Result;
-	}
-
-	/**
-	 * 得到url
-	 */
-	public String getUrl() {
-		return url;
-	}
-
-	/**
-	 * 设置url
-	 */
-	public void setUrl(String url) {
-		this.url = url;
 	}
 
 	public int hashCode() {

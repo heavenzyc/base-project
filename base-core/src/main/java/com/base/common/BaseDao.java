@@ -42,8 +42,6 @@ public interface BaseDao<T,PK extends Serializable> {
     public List<T> findAll(String orderParam, OrderType orderType);
 
     public List<T> find(String queryString);
-
-    public List<T> find(String queryString, Pagination pagination);
     /**
      * s根据hql语句和值查询
      * @param queryString 查询语句（from User where age=? and name=?）
@@ -53,7 +51,7 @@ public interface BaseDao<T,PK extends Serializable> {
     public List<T> find(String queryString,Object... values);
 
     /**
-     * s根据hql语句和值查询
+     * 根据hql语句和值查询
      * @param queryString 查询语句（from User where name=?）
      * @param value
      * @return
@@ -63,7 +61,7 @@ public interface BaseDao<T,PK extends Serializable> {
     /**
      * 根据传入的Map查询，map的key为属性名，value为属性值
      * @param queryString 例如:from User where name=:name and age=:age
-    * @param params  map.put("name","张三"); map.put("age",18);
+     * @param params  map.put("name","张三"); map.put("age",18);
      * @return
      */
     public List<T> find(String queryString,Map<String,Object> params);
@@ -75,5 +73,29 @@ public interface BaseDao<T,PK extends Serializable> {
      * @return
      */
     public T findByProperty(String propertyName,String propertyValue);
+
+    /**
+     * 分页查询
+     * @param queryString 查询语句（例如：from User where name=:name and age=:age）
+     * @param params  map.put("name","张三"); map.put("age",18);
+     * @param pagination 分页组件
+     * @return
+     */
+    public Pagination<T> getPage(String queryString,Map<String,Object> params, Pagination pagination);
+
+    /**
+     * 获取记录数量
+     * @param queryString
+     * @param params
+     * @return
+     */
+    public long count(String queryString,Map<String,Object> params);
+
+    /**
+     * 求和
+     * @param queryString
+     * @return
+     */
+    public long sum(String queryString, String propertyName, Map<String,Object> params);
 
 }
