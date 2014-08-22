@@ -88,10 +88,10 @@
           <groupId>javassist</groupId>
           <artifactId>javassist</artifactId>
       </dependency>
-      <dependency>
+      <!--<dependency>
           <groupId>javax.servlet</groupId>
           <artifactId>servlet-api</artifactId>
-      </dependency>
+      </dependency>-->
       <!--hibernate end-->
   </dependencies>
 
