@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aaedfab-6172-4a29-95dc-cb1ac1e5e697" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-parent/pom.xml" afterPath="$PROJECT_DIR$/base-parent/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseDao.java" afterPath="$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseDaoImpl.java" afterPath="$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java" afterPath="$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/base-core.iml" afterPath="$PROJECT_DIR$/base-core/base-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/pom.xml" afterPath="$PROJECT_DIR$/base-core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-web/base-web.iml" afterPath="$PROJECT_DIR$/base-web/base-web.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/base_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/base_web_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-core/pom.xml" afterPath="$PROJECT_DIR$/base-core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base-parent/pom.xml" afterPath="$PROJECT_DIR$/base-parent/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="base-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,7 +91,7 @@
       <file leaf-file-name="spring-datasource.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/spring/spring-datasource.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="551">
+            <state line="18" column="40" selection-start="995" selection-end="995" vertical-scroll-proportion="-13.48" vertical-offset="5" max-vertical-offset="551">
               <folding />
             </state>
           </provider>
@@ -97,8 +100,10 @@
       <file leaf-file-name="spring-hibernate.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/spring/spring-hibernate.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="27" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="988">
-              <folding />
+            <state line="39" column="27" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-25.84" vertical-offset="95" max-vertical-offset="988">
+              <folding>
+                <element signature="e#1270#1288#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,7 +120,7 @@
       <file leaf-file-name="BaseDaoImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="3105" selection-end="3105" vertical-scroll-proportion="0.0" vertical-offset="2033" max-vertical-offset="2432">
+            <state line="98" column="30" selection-start="2801" selection-end="2801" vertical-scroll-proportion="-0.05899705" vertical-offset="1692" max-vertical-offset="2432">
               <folding>
                 <element signature="e#2544#2768#0" expanded="true" />
                 <element signature="e#2757#2758#0" expanded="true" />
@@ -127,7 +132,7 @@
       <file leaf-file-name="Pagination.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-utils/src/main/java/com/base/pagination/Pagination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="49" selection-start="312" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="8531">
+            <state line="18" column="49" selection-start="312" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="7505">
               <folding />
             </state>
           </provider>
@@ -136,7 +141,7 @@
       <file leaf-file-name="BaseDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="1615">
+            <state line="43" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="491" max-vertical-offset="1520">
               <folding />
             </state>
           </provider>
@@ -163,7 +168,7 @@
       <file leaf-file-name="UserDaoTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base-core/src/test/java/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="37" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1178">
+            <state line="51" column="37" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="541" max-vertical-offset="988">
               <folding />
             </state>
           </provider>
@@ -498,7 +503,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../snowflakes" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
@@ -1010,9 +1015,9 @@
       </method>
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.base-project" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserDaoTest.getTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserDaoTest.findTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.UserDaoTest.getTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserDaoTest.findTest" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.base-project" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.UserDaoTest.findAllTest" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.UserDaoTest.findByQueryStrTest" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.UserDaoTest.findPage" />
@@ -1051,8 +1056,7 @@
       <workItem from="1408496550826" duration="8161000" />
       <workItem from="1408581493998" duration="23000" />
       <workItem from="1408581545950" duration="1695000" />
-      <workItem from="1408601205639" duration="6042000" />
-      <workItem from="1408672601536" duration="2000" />
+      <workItem from="1408601205639" duration="5932000" />
     </task>
     <task id="LOCAL-00001" summary="new create&#10;">
       <created>1407919303043</created>
@@ -1090,10 +1094,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99453000" />
+    <option name="totallyTimeSpent" value="99341000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1105,36 +1109,36 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32189542" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3382353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3382353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23827533" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29575163" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28267974" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21633889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.17776097" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22844176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42810458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42810458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28267974" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32189542" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29575163" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29575163" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1153,8 +1157,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28267974" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21633889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22844176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.17776097" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22844176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1286,12 +1290,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/test/java/SpringBaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="437" />
+        <state line="14" column="16" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="437">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/java/com/base/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="361" />
+        <state line="11" column="0" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="361">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/3.1.2.RELEASE/spring-tx-3.1.2.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
@@ -1316,12 +1324,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/java/com/base/user/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1026" />
+        <state line="34" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1026">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="1368" />
+        <state line="25" column="21" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="1368">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spy.log">
@@ -1334,40 +1346,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/test/java/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494" />
+        <state line="17" column="22" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-web/src/main/java/com/base/controller/MyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="494" />
+        <state line="28" column="0" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="494">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-parent/base-parent.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399" />
+        <state line="14" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/base-core.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="1026" />
+        <state line="5" column="39" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="1026">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/java/com/base/user/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532" />
+        <state line="19" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/spring/spring-datasource.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="551">
+        <state line="18" column="40" selection-start="995" selection-end="995" vertical-scroll-proportion="-13.48" vertical-offset="5" max-vertical-offset="551">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/resources/spring/spring-hibernate.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="27" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="988">
-          <folding />
+        <state line="39" column="27" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-25.84" vertical-offset="95" max-vertical-offset="988">
+          <folding>
+            <element signature="e#1270#1288#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1380,22 +1404,30 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.2.RELEASE/spring-web-3.1.2.RELEASE.jar!/org/springframework/web/context/request/WebRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="84" selection-start="253" selection-end="253" vertical-scroll-proportion="-3.8" vertical-offset="0" max-vertical-offset="817" />
+        <state line="6" column="84" selection-start="253" selection-end="253" vertical-scroll-proportion="-3.8" vertical-offset="0" max-vertical-offset="817">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.2.RELEASE/spring-web-3.1.2.RELEASE.jar!/org/springframework/web/context/request/RequestAttributes.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627" />
+        <state line="6" column="17" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.2.RELEASE/spring-web-3.1.2.RELEASE-sources.jar!/org/springframework/web/context/request/RequestAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="32" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.23076923" vertical-offset="137" max-vertical-offset="2679" />
+        <state line="28" column="32" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.23076923" vertical-offset="137" max-vertical-offset="2679">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.2.RELEASE/spring-web-3.1.2.RELEASE-sources.jar!/org/springframework/web/context/request/WebRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="17" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.33333334" vertical-offset="103" max-vertical-offset="3458" />
+        <state line="32" column="17" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.33333334" vertical-offset="103" max-vertical-offset="3458">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-parent/pom.xml">
@@ -1414,17 +1446,23 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.2.RELEASE/spring-orm-3.1.2.RELEASE-sources.jar!/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="41" selection-start="7321" selection-end="7321" vertical-scroll-proportion="5.199461" vertical-offset="503" max-vertical-offset="4674" />
+        <state line="170" column="41" selection-start="7321" selection-end="7321" vertical-scroll-proportion="5.199461" vertical-offset="503" max-vertical-offset="4674">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/3.1.2.RELEASE/spring-orm-3.1.2.RELEASE-sources.jar!/org/springframework/orm/hibernate3/support/OpenSessionInViewInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="-8.218328" vertical-offset="3144" max-vertical-offset="3990" />
+        <state line="29" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="-8.218328" vertical-offset="3144" max-vertical-offset="3990">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base-web/src/main/webapp/WEB-INF/springmvc-servlet.xml">
@@ -1457,7 +1495,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base-core/src/main/java/com/base/common/BaseDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="3105" selection-end="3105" vertical-scroll-proportion="0.0" vertical-offset="2033" max-vertical-offset="2432">
+        <state line="98" column="30" selection-start="2801" selection-end="2801" vertical-scroll-proportion="-0.05899705" vertical-offset="1692" max-vertical-offset="2432">
           <folding>
             <element signature="e#2544#2768#0" expanded="true" />
             <element signature="e#2757#2758#0" expanded="true" />

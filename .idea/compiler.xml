@@ -22,9 +22,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="base-core" />
-        <module name="base-utils" />
-        <module name="base-web" />
       </profile>
     </annotationProcessing>
   </component>
