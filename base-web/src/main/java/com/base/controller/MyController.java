@@ -28,4 +28,19 @@ public class MyController {
     public String login(){
         return "/login";
     }
+
+    @RequestMapping(value = "/test")
+    public String test(){
+        return "/project/test";
+    }
+
+    @RequestMapping(value = "/jgrid")
+    public String jgrid(){
+        return "/project/jGrid";
+    }
+
+    @RequestMapping(value = "/form")
+    public String form(){
+        return "/project/form";
+    }
 }
