@@ -1,19 +1,25 @@
 <@we.html css=[] js=[]>
 
-<div class="row">
-    <div class="col-xs-12">
-        <!-- PAGE CONTENT BEGINS -->
-        <table id="grid-table"></table>
+<div class="page-content">
+    <div class="page-header">
+        <button class="btn">添加用户 </button>
+        <button class="btn btn-primary">添加用户</button>
+        <button class="btn btn-info">添加用户</button>
+        <button class="btn btn-success">添加用户</button>
+    </div><!-- /.page-header -->
 
-        <div id="grid-pager"></div>
+    <div class="row">
 
-        <script type="text/javascript">
-            var $path_base = "/";//this will be used in gritter alerts containing images
-        </script>
+        <div class="col-xs-12">
+            <table id="grid-table"></table>
+            <div id="grid-pager"></div>
+            <script type="text/javascript">
+                var $path_base = "/";
+            </script>
+        </div><!-- /.col -->
+    </div><!-- /.row -->
 
-        <!-- PAGE CONTENT ENDS -->
-    </div><!-- /.col -->
-</div><!-- /.row -->
+</div><!-- /.page-content -->
 
 <script type="text/javascript">
 var grid_data =
