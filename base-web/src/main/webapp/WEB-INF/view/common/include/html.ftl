@@ -206,20 +206,7 @@
         </form>
     </div><!-- #nav-search -->
 </div>
-
-<div class="page-content">
-    <div class="page-header">
-        <h1>
-            控制台
-        <small>
-            <i class="icon-double-angle-right"></i>
-            查看
-        </small>
-        </h1>
-    </div><!-- /.page-header -->
     <#nested>
-
-</div><!-- /.page-content -->
 </div><!-- /.main-content -->
 </div><!-- /.main-container-inner -->
 
