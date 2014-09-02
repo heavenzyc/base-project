@@ -14,9 +14,12 @@
     <![endif]-->
     <!-- ace styles -->
     <link rel="stylesheet" href="/assets/css/jquery-ui-1.10.3.full.min.css" />
-    <link rel="stylesheet" href="/assets/css/datepicker.css" />
     <link rel="stylesheet" href="/assets/css/ui.jqgrid.css"/>
-
+    <link rel="stylesheet" href="/assets/css/chosen.css" />
+    <link rel="stylesheet" href="/assets/css/datepicker.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-timepicker.css" />
+    <link rel="stylesheet" href="/assets/css/daterangepicker.css" />
+    <link rel="stylesheet" href="/assets/css/colorpicker.css" />
 
 
 
@@ -27,7 +30,7 @@
     <link rel="stylesheet" href="/assets/css/ace-ie.min.css" />
     <![endif]-->
 
-    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <#--<script src="/assets/js/jquery-2.0.3.min.js"></script>-->
     <script src="/assets/js/ace-extra.min.js"></script>
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shiv.js"></script>
@@ -225,7 +228,7 @@
 
 <!--[if IE]>
 <script type="text/javascript">
-    window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+    window.jQuery || document.write("<script src='/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 
@@ -234,7 +237,22 @@
 </script>
 <script src="/assets/js/bootstrap.min.js"></script>
 <script src="/assets/js/typeahead-bs2.min.js"></script>
-
+<#--############################################################-->
+<script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/assets/js/chosen.jquery.min.js"></script>
+<script src="/assets/js/fuelux/fuelux.spinner.min.js"></script>
+<script src="/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="/assets/js/date-time/bootstrap-timepicker.min.js"></script>
+<script src="/assets/js/date-time/moment.min.js"></script>
+<script src="/assets/js/date-time/daterangepicker.min.js"></script>
+<script src="/assets/js/bootstrap-colorpicker.min.js"></script>
+<script src="/assets/js/jquery.knob.min.js"></script>
+<script src="/assets/js/jquery.autosize.min.js"></script>
+<script src="/assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+<script src="/assets/js/jquery.maskedinput.min.js"></script>
+<script src="/assets/js/bootstrap-tag.min.js"></script>
+<#--############################################################-->
 <!--[if lte IE 8]>
 <script src="/assets/js/excanvas.min.js"></script>
 <![endif]-->
@@ -244,7 +262,7 @@
 <script src="/assets/js/ace-elements.min.js"></script>
 <script src="/assets/js/ace.min.js"></script>
 
-<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+<#--<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>-->
 </body>
 </html>
 </#macro>
