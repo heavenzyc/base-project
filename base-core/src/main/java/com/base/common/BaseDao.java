@@ -44,7 +44,7 @@ public interface BaseDao<T,PK extends Serializable> {
     public List<T> find(String queryString);
     /**
      * s根据hql语句和值查询
-     * @param queryString 查询语句（from User where age=? and name=?）
+     * @param queryString 查询语句（from Manager where age=? and name=?）
      * @param values
      * @return
      */
@@ -52,7 +52,7 @@ public interface BaseDao<T,PK extends Serializable> {
 
     /**
      * 根据hql语句和值查询
-     * @param queryString 查询语句（from User where name=?）
+     * @param queryString 查询语句（from Manager where name=?）
      * @param value
      * @return
      */
@@ -60,7 +60,7 @@ public interface BaseDao<T,PK extends Serializable> {
 
     /**
      * 根据传入的Map查询，map的key为属性名，value为属性值
-     * @param queryString 例如:from User where name=:name and age=:age
+     * @param queryString 例如:from Manager where name=:name and age=:age
      * @param params  map.put("name","张三"); map.put("age",18);
      * @return
      */
@@ -76,7 +76,7 @@ public interface BaseDao<T,PK extends Serializable> {
 
     /**
      * 分页查询
-     * @param queryString 查询语句（例如：from User where name=:name and age=:age）
+     * @param queryString 查询语句（例如：from Manager where name=:name and age=:age）
      * @param params  map.put("name","张三"); map.put("age",18);
      * @param pagination 分页组件
      * @return
