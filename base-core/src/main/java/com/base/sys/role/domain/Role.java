@@ -1,4 +1,4 @@
-package com.base.role.domain;
+package com.base.sys.role.domain;
 
 import com.base.common.BaseEntity;
 
@@ -8,7 +8,7 @@ import javax.persistence.*;
  * Created by heaven.zyc on 14-8-19.
  */
 @Entity
-@Table(name = "role")
+@Table(name = "sys_role")
 public class Role extends BaseEntity{
 
     @Id

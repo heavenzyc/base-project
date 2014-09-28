@@ -1,7 +1,7 @@
-package com.base.user.domain;
+package com.base.sys.manager.domain;
 
 import com.base.common.BaseEntity;
-import com.base.role.domain.Role;
+import com.base.sys.role.domain.Role;
 
 import javax.persistence.*;
 
@@ -9,8 +9,8 @@ import javax.persistence.*;
  * Created by heaven.zyc on 14-8-14.
  */
 @Entity
-@Table(name = "user")
-public class User extends BaseEntity{
+@Table(name = "sys_manager")
+public class Manager extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
