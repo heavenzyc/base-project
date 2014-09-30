@@ -28,7 +28,8 @@ import javax.imageio.ImageReadParam;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * description
@@ -38,7 +39,7 @@ import org.apache.log4j.Logger;
 public class ImageUtils {
 
     private static final float MAX_SCAL = 10;
-    private static Logger logger = Logger.getLogger(ImageType.class);
+    private static final Logger logger = LoggerFactory.getLogger(ImageUtils.class);
     /**
      * 图片类型
      * 
