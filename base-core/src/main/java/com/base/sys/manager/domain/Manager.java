@@ -1,7 +1,7 @@
 package com.base.sys.manager.domain;
 
 import com.base.common.BaseEntity;
-import com.base.sys.role.domain.Role;
+import com.base.sys.role.domain.SysRole;
 
 import javax.persistence.*;
 
@@ -22,12 +22,9 @@ public class Manager extends BaseEntity{
     @Column
     private Integer age;
 
-    @Column
-    private String nickname;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id")
-    private Role role;
+    private SysRole role;
 
     public Integer getId() {
         return id;
@@ -53,19 +50,11 @@ public class Manager extends BaseEntity{
         this.age = age;
     }
 
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public Role getRole() {
+    public SysRole getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRole(SysRole role) {
         this.role = role;
     }
 }

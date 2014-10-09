@@ -1,7 +1,8 @@
 package com.base.controller;
 
-import com.base.user.domain.User;
-import com.base.user.service.UserService;
+import com.base.PrintUtils;
+import com.base.sys.manager.domain.Manager;
+import com.base.sys.manager.service.ManagerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,11 +16,12 @@ import javax.annotation.Resource;
 public class MyController {
 
     @Resource
-    private UserService userService;
+    private ManagerService managerService;
 
     @RequestMapping(value = "/index")
     public String index(Model model){
-        User user = userService.get(1);
+        Manager user = managerService.get(1);
+        PrintUtils.print(user.getRole().getName());
         model.addAttribute("user",user);
         return "/index";
     }

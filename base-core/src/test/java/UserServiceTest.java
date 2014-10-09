@@ -1,5 +1,5 @@
-import com.base.user.domain.User;
-import com.base.user.service.UserService;
+import com.base.sys.manager.domain.Manager;
+import com.base.sys.manager.service.ManagerService;
 import org.junit.Test;
 
 import javax.annotation.Resource;
@@ -10,16 +10,16 @@ import java.util.List;
  */
 public class UserServiceTest extends SpringBaseTest{
     @Resource
-    private UserService userService;
+    private ManagerService userService;
 
     @Test
     public void userTest(){
-        User user = userService.get(1);
-        List<User> list = userService.findAll();
+        Manager user = userService.get(1);
+        List<Manager> list = userService.findAll();
         System.out.println(user.getName());
     }
 
     public static void main(String[] args){
-        System.out.print(User.class.getName());
+        System.out.print(Manager.class.getName());
     }
 }

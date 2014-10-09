@@ -18,7 +18,8 @@ public class ManagerServiceImpl implements ManagerService {
 
     @Override
     public Manager get(Integer id) {
-        return null;
+        Manager manager = managerDao.get(id);
+        return manager;
     }
 
     @Override
