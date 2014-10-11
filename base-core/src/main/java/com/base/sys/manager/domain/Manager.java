@@ -2,8 +2,9 @@ package com.base.sys.manager.domain;
 
 import com.base.common.BaseEntity;
 import com.base.sys.role.domain.SysRole;
-
 import javax.persistence.*;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
  * Created by heaven.zyc on 14-8-14.
