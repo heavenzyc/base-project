@@ -11,6 +11,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
  */
 @Entity
 @Table(name = "sys_manager")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Manager extends BaseEntity{
 
     @Id

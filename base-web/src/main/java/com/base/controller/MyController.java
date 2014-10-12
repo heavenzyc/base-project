@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by heaven.zyc on 14-8-14.
@@ -20,8 +21,8 @@ public class MyController {
 
     @RequestMapping(value = "/index")
     public String index(Model model){
-        Manager user = managerService.get(1);
-        PrintUtils.print(user.getRole().getName());
+        List<Manager> user = managerService.findAll();
+//        PrintUtils.print(user.getRole().getName());
         model.addAttribute("user",user);
         return "/index";
     }

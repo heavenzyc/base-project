@@ -24,6 +24,7 @@ public class ManagerServiceImpl implements ManagerService {
 
     @Override
     public List<Manager> findAll() {
-        return null;
+        List<Manager> managers = managerDao.findAll();
+        return managers;
     }
 }
