@@ -76,6 +76,7 @@ public class BaseDaoImpl<T,PK extends Serializable> extends HibernateDaoSupport 
     @Override
     public List<T> findAll() {
         String hql = "from "+type.getName();
+        this.getHibernateTemplate().setCacheQueries(true);
         return this.getHibernateTemplate().find(hql);
     }
 
