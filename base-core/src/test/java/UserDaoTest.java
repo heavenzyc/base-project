@@ -95,7 +95,6 @@ public class UserDaoTest extends SpringBaseTest {
 
     @Test
     public void getAllTest(){
-        userDao.getAll();
     }
 
 }
