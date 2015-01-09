@@ -1,6 +1,11 @@
-<#macro html nosidebar=false title="平台" js=[] css=[]>
+<#macro html>
 <!DOCTYPE html>
 <html lang="en">
+    <#nested/>
+</html>
+</#macro>
+
+<#macro html nosidebar=false title="平台" js=[] css=[]>
 <head>
     <meta charset="utf-8" />
     <title>后台管理</title>
@@ -85,185 +90,172 @@
 
 
 </head>
+</#macro>
 
-<body>
-<div class="navbar navbar-default" id="navbar">
-<script type="text/javascript">
-    try{ace.settings.check('navbar' , 'fixed')}catch(e){}
-</script>
+    <#macro body>
 
-<div class="navbar-container" id="navbar-container">
-<div class="navbar-header pull-left">
-    <a href="#" class="navbar-brand">
-        <small>
-            <i class="icon-leaf"></i>
-            ACE后台管理系统
-        </small>
-    </a><!-- /.brand -->
-</div><!-- /.navbar-header -->
+    <body>
+    <div class="navbar navbar-default" id="navbar">
+        <script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
 
-<div class="navbar-header pull-right" role="navigation">
-<ul class="nav ace-nav">
-<li class="light-blue">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-        <img class="nav-user-photo" src="/assets/avatars/user.jpg" alt="Jason's Photo" />
-            <span class="user-info">
-                <small>欢迎光临,</small>
-                Jason
-            </span>
-
-        <i class="icon-caret-down"></i>
-    </a>
-
-    <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-        <li>
-            <a href="#">
-                <i class="icon-cog"></i>
-                设置
-            </a>
-        </li>
-
-        <li>
-            <a href="#">
-                <i class="icon-user"></i>
-                个人资料
-            </a>
-        </li>
-
-        <li class="divider"></li>
-
-        <li>
-            <a href="#">
-                <i class="icon-off"></i>
-                退出
-            </a>
-        </li>
-    </ul>
-</li>
-</ul><!-- /.ace-nav -->
-</div><!-- /.navbar-header -->
-</div><!-- /.container -->
-</div>
-
-<div class="main-container" id="main-container">
-<script type="text/javascript">
-    try{ace.settings.check('main-container' , 'fixed')}catch(e){}
-</script>
-
-<div class="main-container-inner">
-<a class="menu-toggler" id="menu-toggler" href="#">
-    <span class="menu-text"></span>
-</a>
-
-<div class="sidebar" id="sidebar">
-<script type="text/javascript">
-    try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
-</script>
-
-<div class="sidebar-shortcuts" id="sidebar-shortcuts">
-    <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-        <span class="btn btn-success"></span>
-
-        <span class="btn btn-info"></span>
-
-        <span class="btn btn-warning"></span>
-
-        <span class="btn btn-danger"></span>
-    </div>
-</div><!-- #sidebar-shortcuts -->
-
-<ul class="nav nav-list">
-<li class="active">
-    <a href="index.html">
-        <i class="icon-dashboard"></i>
-        <span class="menu-text"> 控制台 </span>
-    </a>
-</li>
-
-<li>
-    <a href="typography.html">
-        <i class="icon-text-width"></i>
-        <span class="menu-text"> 文字排版 </span>
-    </a>
-</li>
-
-<li>
-    <a href="#" class="dropdown-toggle">
-        <i class="icon-desktop"></i>
-        <span class="menu-text"> UI 组件 </span>
-
-        <b class="arrow icon-angle-down"></b>
-    </a>
-
-    <ul class="submenu">
-        <li>
-            <a href="elements.html">
-                <i class="icon-double-angle-right"></i>
-                组件
-            </a>
-        </li>
-        <li>
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-double-angle-right"></i>
-                三级菜单
-                <b class="arrow icon-angle-down"></b>
-            </a>
-
-            <ul class="submenu">
-                <li>
-                    <a href="#">
+        <div class="navbar-container" id="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
                         <i class="icon-leaf"></i>
-                        第一级
-                    </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</li>
-</ul><!-- /.nav-list -->
+                        XXOO管理系统
+                    </small>
+                </a><!-- /.brand -->
+            </div><!-- /.navbar-header -->
+            <div class="navbar-menu pull-left" id="menu1">
+                <#list menuList1 as menu1>
+                    <a href="${menu1.index_url}" <#if currentmenu1.id=menu1.id>class="current"</#if>>${menu1.name}</a>
+                </#list>
+            </div>
+            <div class="navbar-header pull-right" role="navigation">
+                <ul class="nav ace-nav">
+                    <li class="light-blue">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <img class="nav-user-photo" src="${static_path}/backstage/assets/avatars/user.jpg" alt="" />
+								<span class="user-info">
+									<small>${current_user.name!?html}</small>
+									<span id="currentAreaName">${(current_area.name)!?html}</span>
+								</span>
 
-<div class="sidebar-collapse" id="sidebar-collapse">
-    <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
-</div>
+                            <i class="icon-caret-down"></i>
+                        </a>
 
-<script type="text/javascript">
-    try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
-</script>
-</div>
+                        <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li>
+                                <a href="javascript:changepwd();">
+                                    <i class="icon-cog"></i>
+                                    修改密码
+                                </a>
+                            </li>
 
-<div class="main-content">
-<div class="breadcrumbs" id="breadcrumbs">
-    <script type="text/javascript">
-        try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
-    </script>
+                            <li class="divider"></li>
+                            <#list g_areaList as area>
+                                <li>
+                                    <a href="javascript:;" class="btnAreaSelect" __area_id="${area.id}">
+                                        <i class="icon-user"></i>
+                                    ${area.name!?html}
+                                    </a>
+                                </li>
+                            </#list>
+                            <li class="divider"></li>
 
-    <ul class="breadcrumb">
-        <li>
-            <i class="icon-home home-icon"></i>
-            <a href="#">首页</a>
-        </li>
-        <li class="active">控制台</li>
-    </ul><!-- .breadcrumb -->
+                            <li>
+                                <a href="/logout">
+                                    <i class="icon-off"></i>
+                                    退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul><!-- /.ace-nav -->
+            </div><!-- /.navbar-header -->
+        </div><!-- /.container -->
+    </div>
 
-    <div class="nav-search" id="nav-search">
-        <form class="form-search">
-            <span class="input-icon">
-                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
-                <i class="icon-search nav-search-icon"></i>
-            </span>
-        </form>
-    </div><!-- #nav-search -->
-</div>
-    <#nested>
-</div><!-- /.main-content -->
-</div><!-- /.main-container-inner -->
+    <div class="main-container" id="main-container">
+        <script type="text/javascript">
+            try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+        </script>
 
-<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-    <i class="icon-double-angle-up icon-only bigger-110"></i>
-</a>
-</div><!-- /.main-container -->
+        <div class="main-container-inner" >
+            <a class="menu-toggler" id="menu-toggler" href="#">
+                <span class="menu-text"></span>
+            </a>
 
-<#--<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>-->
-</body>
+            <#if nosidebar>
+            <#else>
+                <div class="sidebar" id="sidebar">
+                    <script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+					</script>
+
+                    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                        <!--
+                        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                            <button class="btn btn-success">
+                                <i class="icon-signal"></i>
+                            </button>
+
+                            <button class="btn btn-info">
+                                <i class="icon-pencil"></i>
+                            </button>
+
+                            <button class="btn btn-warning">
+                                <i class="icon-group"></i>
+                            </button>
+
+                            <button class="btn btn-danger">
+                                <i class="icon-cogs"></i>
+                            </button>
+                        </div>-->
+
+                        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                            <span class="btn btn-success"></span>
+
+                            <span class="btn btn-info"></span>
+
+                            <span class="btn btn-warning"></span>
+
+                            <span class="btn btn-danger"></span>
+                        </div>
+                    </div><!-- #sidebar-shortcuts -->
+
+                    <ul class="nav nav-list">
+                        <#list menuList2 as menu2>
+                            <li <#if currentmenu2.id=menu2.id>class="active"</#if>>
+                                <#if menu2.menuList3?has_content>
+                                    <a href="#" class="dropdown-toggle">
+                                        <i class="${menu2.icon_class}"></i>
+                                        <span class="menu-text">${menu2.name}</span>
+                                        <b class="arrow icon-angle-down"></b>
+                                    </a>
+                                    <ul class="submenu">
+                                        <#list menu2.menuList3 as menu3>
+                                            <li>
+                                                <a href="${menu3.index_url}">
+                                                    <i class="icon-double-angle-right"></i>
+                                                ${menu3.name}
+                                                </a>
+                                            </li>
+                                        </#list>
+                                    </ul>
+                                <#else>
+                                    <a href="${menu2.index_url}">
+                                        <i class="${menu2.icon_class}"></i>
+                                        <span class="menu-text">${menu2.name}</span>
+                                    </a>
+                                </#if>
+                            </li>
+                        </#list>
+                    </ul><!-- /.nav-list -->
+
+                    <div class="sidebar-collapse" id="sidebar-collapse">
+                        <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+                    </div>
+
+                    <script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+					</script>
+                </div>
+            </#if>
+
+            <div class="main-content <#if nosidebar>no-margin</#if>">
+                <#nested>
+            </div><!-- /.main-content -->
+
+        </div><!-- /.main-container-inner -->
+
+        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+            <i class="icon-double-angle-up icon-only bigger-110"></i>
+        </a>
+    </div><!-- /.main-container -->
+    </body>
 </html>
 </#macro>
