@@ -1,6 +1,5 @@
 package com.base.controller;
 
-import com.base.PrintUtils;
 import com.base.sys.manager.domain.Manager;
 import com.base.sys.manager.service.ManagerService;
 import org.springframework.stereotype.Controller;

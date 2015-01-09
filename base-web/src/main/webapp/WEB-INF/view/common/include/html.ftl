@@ -39,6 +39,51 @@
 
     <![endif]-->
 
+    <!--[if !IE]> -->
+
+    <script type="text/javascript">
+    window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+</script>
+
+    <!-- <![endif]-->
+
+    <!--[if IE]>
+    <script type="text/javascript">
+    window.jQuery || document.write("<script src='/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+</script>
+    <![endif]-->
+
+    <script type="text/javascript">
+    if("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+</script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/typeahead-bs2.min.js"></script>
+<#--############################################################-->
+    <script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/assets/js/chosen.jquery.min.js"></script>
+    <script src="/assets/js/fuelux/fuelux.spinner.min.js"></script>
+    <script src="/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/js/date-time/bootstrap-timepicker.min.js"></script>
+    <script src="/assets/js/date-time/moment.min.js"></script>
+    <script src="/assets/js/date-time/daterangepicker.min.js"></script>
+    <script src="/assets/js/bootstrap-colorpicker.min.js"></script>
+    <script src="/assets/js/jquery.knob.min.js"></script>
+    <script src="/assets/js/jquery.autosize.min.js"></script>
+    <script src="/assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+    <script src="/assets/js/jquery.maskedinput.min.js"></script>
+    <script src="/assets/js/bootstrap-tag.min.js"></script>
+<#--############################################################-->
+    <!--[if lte IE 8]>
+    <script src="/assets/js/excanvas.min.js"></script>
+    <![endif]-->
+    <script src="/assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+    <script src="/assets/js/jqGrid/i18n/grid.locale-en.js"></script>
+
+    <script src="/assets/js/ace-elements.min.js"></script>
+    <script src="/assets/js/ace.min.js"></script>
+
+
 </head>
 
 <body>
@@ -217,50 +262,6 @@
     <i class="icon-double-angle-up icon-only bigger-110"></i>
 </a>
 </div><!-- /.main-container -->
-
-<!--[if !IE]> -->
-
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
-</script>
-
-<!-- <![endif]-->
-
-<!--[if IE]>
-<script type="text/javascript">
-    window.jQuery || document.write("<script src='/assets/js/jquery-1.10.2.min.js'>"+"<"+"script>");
-</script>
-<![endif]-->
-
-<script type="text/javascript">
-    if("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
-</script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/typeahead-bs2.min.js"></script>
-<#--############################################################-->
-<script src="/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="/assets/js/jquery.ui.touch-punch.min.js"></script>
-<script src="/assets/js/chosen.jquery.min.js"></script>
-<script src="/assets/js/fuelux/fuelux.spinner.min.js"></script>
-<script src="/assets/js/date-time/bootstrap-datepicker.min.js"></script>
-<script src="/assets/js/date-time/bootstrap-timepicker.min.js"></script>
-<script src="/assets/js/date-time/moment.min.js"></script>
-<script src="/assets/js/date-time/daterangepicker.min.js"></script>
-<script src="/assets/js/bootstrap-colorpicker.min.js"></script>
-<script src="/assets/js/jquery.knob.min.js"></script>
-<script src="/assets/js/jquery.autosize.min.js"></script>
-<script src="/assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
-<script src="/assets/js/jquery.maskedinput.min.js"></script>
-<script src="/assets/js/bootstrap-tag.min.js"></script>
-<#--############################################################-->
-<!--[if lte IE 8]>
-<script src="/assets/js/excanvas.min.js"></script>
-<![endif]-->
-<script src="/assets/js/jqGrid/jquery.jqGrid.min.js"></script>
-<script src="/assets/js/jqGrid/i18n/grid.locale-en.js"></script>
-
-<script src="/assets/js/ace-elements.min.js"></script>
-<script src="/assets/js/ace.min.js"></script>
 
 <#--<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>-->
 </body>
