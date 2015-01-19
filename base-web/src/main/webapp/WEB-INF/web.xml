@@ -69,4 +69,13 @@
         <servlet-name>springmvc</servlet-name>
     </filter-mapping>
 
+    <filter>
+        <filter-name>operatorAuthorizationFilter</filter-name>
+        <filter-class>com.base.common.filter.OperatorAuthorizationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>operatorAuthorizationFilter</filter-name>
+        <url-pattern>/se/login</url-pattern>
+    </filter-mapping>
+
 </web-app>
