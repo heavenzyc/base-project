@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
  * Created by zkdu on 2015/1/9.
  */
 @Repository
-public class SysResourceServiceDao extends BaseDaoImpl<SysResource,Integer>{
+public class SysResourceDao extends BaseDaoImpl<SysResource,Integer>{
 }
