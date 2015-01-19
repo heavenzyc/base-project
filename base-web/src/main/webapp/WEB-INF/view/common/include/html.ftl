@@ -186,10 +186,37 @@
             <span class="menu-text"> 一级菜单1 </span>
         </a>
     </li>
-    <#if menuList1?size gt 0 >
+    <li>
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-desktop"></i>
+            <span class="menu-text"> 一级菜单2 </span>
+            <b class="arrow icon-angle-down"></b>
+        </a>
+        <ul class="submenu">
+            <li>
+                <a href="elements.html">
+                    <i class="icon-double-angle-right"></i>
+                    组件
+                </a>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">
+                    <i class="icon-double-angle-right"></i>
+                    三级菜单
+                    <b class="arrow icon-angle-down"></b>
+                </a>
 
-    </#if>
-
+                <ul class="submenu">
+                    <li>
+                        <a href="#">
+                            <i class="icon-leaf"></i>
+                            第一级
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
 </ul><!-- /.nav-list -->
 
 <div class="sidebar-collapse" id="sidebar-collapse">
