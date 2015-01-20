@@ -26,9 +26,15 @@ public class OperatorAuthorizationFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        List<SysResource> menus = sysResourceService.getAll();
+
+
         HttpServletRequest request = (HttpServletRequest) servletRequest;
-        request.getSession().setAttribute("menus",menus);
+        HttpSession session = request.getSession();
+        List<SysResource> menus = (List<SysResource>) session.getAttribute("menus");
+        if (menus == null || menus.size() == 0) {
+            menus = sysResourceService.getMenus();
+        }
+        session.setAttribute("menus",menus);
         filterChain.doFilter(servletRequest,servletResponse);
     }
 
