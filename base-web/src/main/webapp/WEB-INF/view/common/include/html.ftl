@@ -176,47 +176,44 @@
     <li class="active">
         <a href="index.html">
             <i class="icon-dashboard"></i>
-            <span class="menu-text"> 后台系统 </span>
+            <span class="menu-text"> 后台管理系统 </span>
         </a>
     </li>
-
-    <li>
-        <a href="typography.html">
-            <i class="icon-text-width"></i>
-            <span class="menu-text"> 一级菜单1 </span>
-        </a>
-    </li>
+    <#list menus as first>
     <li>
         <a href="#" class="dropdown-toggle">
-            <i class="icon-desktop"></i>
-            <span class="menu-text"> 一级菜单2 </span>
+            <i class="icon-double-angle-right"></i>
+            ${first.name}
             <b class="arrow icon-angle-down"></b>
         </a>
+
         <ul class="submenu">
-            <li>
-                <a href="elements.html">
-                    <i class="icon-double-angle-right"></i>
-                    组件
-                </a>
-            </li>
+            <#list first.subRes as second>
             <li>
                 <a href="#" class="dropdown-toggle">
-                    <i class="icon-double-angle-right"></i>
-                    三级菜单
+                    <i class="icon-pencil"></i>
+                    ${second.name}
+                <#if (second.subRes)?? && (second.subRes)?size gt 0>
                     <b class="arrow icon-angle-down"></b>
+                </#if>
                 </a>
-
+                <#if (second.subRes)?? && (second.subRes)?size gt 0>
                 <ul class="submenu">
+                    <#list second.subRes as third>
                     <li>
                         <a href="#">
-                            <i class="icon-leaf"></i>
-                            第一级
+                            <i class="icon-list"></i>
+                            ${third.name}
                         </a>
                     </li>
+                    </#list>
                 </ul>
+                </#if>
             </li>
+            </#list>
         </ul>
     </li>
+    </#list>
 </ul><!-- /.nav-list -->
 
 <div class="sidebar-collapse" id="sidebar-collapse">
