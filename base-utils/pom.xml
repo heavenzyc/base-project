@@ -71,5 +71,9 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
     </dependencies>
 </project>
