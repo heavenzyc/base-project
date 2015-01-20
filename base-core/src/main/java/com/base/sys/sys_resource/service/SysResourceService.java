@@ -1,5 +1,6 @@
 package com.base.sys.sys_resource.service;
 
+import com.base.sys.manager.domain.Manager;
 import com.base.sys.sys_resource.model.SysResource;
 
 import java.util.List;
@@ -10,5 +11,9 @@ import java.util.List;
 
 public interface SysResourceService {
 
-    List<SysResource> getAll();
+    public List<SysResource> getAll();
+
+    public List<SysResource> getMenus();
+
+    public List<SysResource> getManagerMenus(Manager manager);
 }
