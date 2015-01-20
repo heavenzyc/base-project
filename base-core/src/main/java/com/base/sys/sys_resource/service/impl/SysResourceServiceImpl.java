@@ -1,5 +1,7 @@
 package com.base.sys.sys_resource.service.impl;
 
+import com.base.sys.manager.domain.Manager;
+import com.base.sys.role.domain.SysRole;
 import com.base.sys.sys_resource.dao.SysResourceDao;
 import com.base.sys.sys_resource.model.SysResource;
 import com.base.sys.sys_resource.service.SysResourceService;
@@ -26,11 +28,17 @@ public class SysResourceServiceImpl implements SysResourceService {
     @Override
     public List<SysResource> getMenus() {
         List<SysResource> first = sysResourceDao.find(" from SysResource where type=1 ");
-        this.test(first,1);
+        this.buildMenus(first, 1);
         return first;
     }
 
-    private void test(List<SysResource> resources, Integer type) {
+    @Override
+    public List<SysResource> getManagerMenus(Manager manager) {
+        SysRole role = manager.getRole();
+        return null;
+    }
+
+    private void buildMenus(List<SysResource> resources, Integer type) {
         type++;
         List<SysResource> result = new ArrayList<SysResource>();
         if (type > 3 || resources.size() == 0) return;
@@ -42,6 +50,6 @@ public class SysResourceServiceImpl implements SysResourceService {
                 result.add(child);
             }
         }
-        test(result,type);
+        buildMenus(result, type);
     }
 }
