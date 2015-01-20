@@ -4,6 +4,7 @@ import com.base.common.BaseEntity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by heaven.zyc on 14-9-28.
@@ -13,8 +14,8 @@ import java.util.Date;
 public class SysResource extends BaseEntity {
 
     @Id
+    @Column(name = "id")
     private String id;
-
 
     @Column(name = "pid")
     private String pid;
@@ -44,7 +45,10 @@ public class SysResource extends BaseEntity {
     @Column(name = "create_time")
     private Date createTime;
 
-    @Column
+    @Transient
+    private List<SysResource> subRes;
+
+
     public String getId() {
         return id;
     }
@@ -123,5 +127,13 @@ public class SysResource extends BaseEntity {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public List<SysResource> getSubRes() {
+        return subRes;
+    }
+
+    public void setSubRes(List<SysResource> subRes) {
+        this.subRes = subRes;
     }
 }
