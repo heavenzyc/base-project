@@ -58,7 +58,14 @@
         <url-pattern>*.svg</url-pattern>
 
     </servlet-mapping>
-
+    <filter>
+        <filter-name>openSessionInViewFilter</filter-name>
+        <filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>openSessionInViewFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <filter>
         <filter-name>HiddenHttpMethodFilter</filter-name>
         <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
@@ -68,14 +75,21 @@
         <filter-name>HiddenHttpMethodFilter</filter-name>
         <servlet-name>springmvc</servlet-name>
     </filter-mapping>
-
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.base.common.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/login</url-pattern>
+    </filter-mapping>
     <filter>
         <filter-name>operatorAuthorizationFilter</filter-name>
-        <filter-class>com.base.common.filter.OperatorAuthorizationFilter</filter-class>
+        <filter-class>com.base.common.filter.ManagerAuthorizationFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>operatorAuthorizationFilter</filter-name>
-        <url-pattern>/se/login</url-pattern>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
 
 </web-app>
