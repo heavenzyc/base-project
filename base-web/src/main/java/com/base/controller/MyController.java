@@ -42,11 +42,13 @@ public class MyController {
     }
 
     @RequestMapping(value = "/jgrid")
-    public String jgrid(){
+    public ModelAndView jgrid(){
+        Manager manager = managerService.get(1);
+        List<SysResource> menus = sysResourceService.getManagerMenus(manager);
         ModelAndView model = new ModelAndView();
-        List<SysResource> sysResources = sysResourceService.getAll();
-        model.addObject("menuList1",sysResources);
-        return "/project/jGrid";
+        model.addObject("menus",menus);
+        model.setViewName("/project/jGrid");
+        return model;
     }
 
     @RequestMapping(value = "/form")
