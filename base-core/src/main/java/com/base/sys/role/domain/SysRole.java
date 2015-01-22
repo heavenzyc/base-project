@@ -1,8 +1,10 @@
 package com.base.sys.role.domain;
 
 import com.base.common.BaseEntity;
+import com.base.sys.sys_resource.model.SysResource;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by heaven.zyc on 14-8-19.
@@ -20,6 +22,18 @@ public class SysRole extends BaseEntity{
 
     @Column
     private String description;
+
+    @ManyToMany(
+            fetch = FetchType.LAZY,
+            targetEntity=SysResource.class,
+            cascade= {CascadeType.PERSIST}
+    )
+    @JoinTable(
+            name="sys_role_resource",
+            joinColumns=@JoinColumn(name="role_id"),
+            inverseJoinColumns=@JoinColumn(name="resource_id")
+    )
+    private List<SysResource> resourceList;
 
 
     public Integer getId() {
@@ -44,5 +58,13 @@ public class SysRole extends BaseEntity{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<SysResource> getResourceList() {
+        return resourceList;
+    }
+
+    public void setResourceList(List<SysResource> resourceList) {
+        this.resourceList = resourceList;
     }
 }

@@ -28,28 +28,46 @@ public class SysResourceServiceImpl implements SysResourceService {
     @Override
     public List<SysResource> getMenus() {
         List<SysResource> first = sysResourceDao.find(" from SysResource where type=1 ");
-        this.buildMenus(first, 1);
+//        this.buildMenus(first, 1);
         return first;
     }
 
     @Override
     public List<SysResource> getManagerMenus(Manager manager) {
         SysRole role = manager.getRole();
-        return null;
+        List<SysResource> list = role.getResourceList();
+        List<SysResource> firstList = new ArrayList<SysResource>();
+        for (SysResource first : list) {
+            if (first.getType().equals(1)) {
+                firstList.add(first);
+            }
+        }
+        buildMenus(list,1,firstList);
+        return firstList;
     }
 
-    private void buildMenus(List<SysResource> resources, Integer type) {
+    private void buildMenus(List<SysResource> resource, Integer type, List<SysResource> firstList) {
         type++;
         List<SysResource> result = new ArrayList<SysResource>();
-        if (type > 3 || resources.size() == 0) return;
+        if (type > 3 || firstList.size() == 0) return;
         String hql = " from SysResource where id like ? and type=? ";
-        for (SysResource parent : resources) {
+        for (SysResource parent : resource) {
+            //
             List<SysResource> list = sysResourceDao.find(hql,parent.getId()+"%",parent.getType()+1);
-            parent.setSubRes(list);
-            for (SysResource child : list) {
+            List<SysResource> check = new ArrayList<SysResource>();
+            for (SysResource out : list) {
+                for (SysResource in : resource) {
+                    if (in.getId().equals(out.getId())) {
+                        check.add(in);
+                        break;
+                    }
+                }
+            }
+            parent.setSubRes(check);
+            for (SysResource child : check) {
                 result.add(child);
             }
         }
-        buildMenus(result, type);
+        buildMenus(result, type,firstList);
     }
 }

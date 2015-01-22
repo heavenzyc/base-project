@@ -24,6 +24,10 @@ public class Manager extends BaseEntity{
     @Column
     private Integer age;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status")
+    private ManagerStatus status;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id")
     private SysRole role;
@@ -58,5 +62,13 @@ public class Manager extends BaseEntity{
 
     public void setRole(SysRole role) {
         this.role = role;
+    }
+
+    public ManagerStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ManagerStatus status) {
+        this.status = status;
     }
 }

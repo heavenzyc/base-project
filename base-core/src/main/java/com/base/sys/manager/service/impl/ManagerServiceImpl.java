@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by heaven.zyc on 14-8-14.
  */
-@Service
+@Service("managerService")
 public class ManagerServiceImpl implements ManagerService {
     @Resource
     private ManagerDao managerDao;
@@ -26,5 +26,10 @@ public class ManagerServiceImpl implements ManagerService {
     public List<Manager> findAll() {
         List<Manager> managers = managerDao.findAll();
         return managers;
+    }
+
+    @Override
+    public Manager login(String account, String password) {
+        return managerDao.login(account,password);
     }
 }

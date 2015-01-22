@@ -1,6 +1,7 @@
 package com.base.sys.sys_resource.model;
 
 import com.base.common.BaseEntity;
+import com.base.sys.role.domain.SysRole;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -44,6 +45,14 @@ public class SysResource extends BaseEntity {
 
     @Column(name = "create_time")
     private Date createTime;
+
+    @ManyToMany(
+            fetch = FetchType.LAZY,
+            cascade = {CascadeType.PERSIST,CascadeType.MERGE},
+            mappedBy = "resourceList",
+            targetEntity = SysRole.class
+    )
+    private List<SysRole> roles;
 
     @Transient
     private List<SysResource> subRes;
@@ -135,5 +144,13 @@ public class SysResource extends BaseEntity {
 
     public void setSubRes(List<SysResource> subRes) {
         this.subRes = subRes;
+    }
+
+    public List<SysRole> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<SysRole> roles) {
+        this.roles = roles;
     }
 }

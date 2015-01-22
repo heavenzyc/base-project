@@ -12,4 +12,6 @@ public interface ManagerService {
     Manager get(Integer id);
 
     List<Manager> findAll();
+
+    Manager login(String account, String password);
 }
